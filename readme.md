@@ -61,3 +61,33 @@ The output will display the hash, author, date, and optional message of each com
 If there are too many of commit use command
 `git log --oneline`
 The output will display only a few symbols of the hash and optional message
+
+### HEAD - service file
+Last commit hash stores in special service file named HEAD. You can use `HEAD` instead of last commit hash on git bash commands
+
+## File status in git 
+Several file status displayed in the `git status` output. 
+
+### untracked
+- obtaining the status
+    new file
+- lost of status
+    `git add`
+
+### tracked
+- obtaining the status
+    `git add` or `git commit`
+- lost of status
+    `git reset` or `git rm --cached` or changes in file 
+
+### staged 
+- obtaining the status
+    `git add`
+- lost of status
+    `git reset` or `git rm --cached`
+
+### modified
+- obtaining the status
+    changes in file
+- lost of status
+    `git add` or `git reset` or `git rm --cached`
